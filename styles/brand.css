@@ -1,0 +1,21 @@
+:root {
+  --heading-font-family: "Asap", sans-serif;
+  --body-font-family: "Asap", Arial, sans-serif;
+  --background-color: #efefef;
+  --text-color: #333;
+  --link-color: #67b500;
+  --link-hover-color: #5da132;
+  --section-padding: 40px 0;
+  --nav-height: 60px;
+  --content-max-width: 1200px;
+  --heading-size-xxl: 34px;
+  --heading-size-xl: 24px;
+  --heading-size-l: 20px;
+  --heading-size-m: 18px;
+  --heading-size-s: 16px;
+  --heading-size-xs: 14px;
+  --color-grey: #f7f7f7;
+  --color-highlight: #fff;
+  --color-green-primary: #67b500;
+  --color-green-dark: #5da132;
+}

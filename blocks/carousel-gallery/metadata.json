@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-gallery",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-08T08:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.viajeselcorteingles.es/grandes-viajes/destinos/egipto",
+    "originPage": "Travel destination landing page (Egypt)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "photo-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + text description",
+    "buttonCount": 0,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "travel photo galleries",
+      "landscape image slideshows",
+      "destination photo showcases with descriptions",
+      "inspirational image carousels"
+    ],
+    "notSuitableFor": [
+      "product carousels with pricing",
+      "testimonial sliders",
+      "single-image hero banners"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/grandes-viajes/destinos/egipto"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-08T08:35:00.000Z"
+  }
+}

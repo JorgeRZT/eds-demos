@@ -1,0 +1,41 @@
+{
+  "variantName": "accordion-travel",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-06-08T08:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.viajeselcorteingles.es/grandes-viajes/destinos/egipto",
+    "originPage": "Travel destination landing page (Egypt)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "travel-info",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "title + rich text with images",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "travel destination information sections",
+      "points of interest with descriptions",
+      "hotel/accommodation information",
+      "practical travel tips and useful info",
+      "FAQ-style expandable content"
+    ],
+    "notSuitableFor": [
+      "simple Q&A without images",
+      "single-item expandable sections",
+      "content requiring complex nested layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/grandes-viajes/destinos/egipto"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-08T08:35:00.000Z"
+  }
+}

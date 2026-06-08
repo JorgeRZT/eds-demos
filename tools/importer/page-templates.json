@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "destination-page",
+      "urls": [
+        "https://www.viajeselcorteingles.es/grandes-viajes/destinos/egipto"
+      ],
+      "description": "Travel destination page showcasing trip packages, highlights, and booking options for a specific destination",
+      "blocks": [
+        {
+          "name": "hero-destination",
+          "instances": [".header-block"]
+        },
+        {
+          "name": "cards-travel",
+          "instances": [".mod_section_access", ".hv-advantages", ".mod-links-destination-x2"]
+        },
+        {
+          "name": "carousel-gallery",
+          "instances": [".thumbnail-module"]
+        },
+        {
+          "name": "accordion-travel",
+          "instances": [".row > .column > .module.mod-info"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": ".row.full-landing",
+          "style": null,
+          "blocks": ["hero-destination"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "CTA Banner",
+          "selector": "#modAdviseme",
+          "style": "highlight",
+          "blocks": [],
+          "defaultContent": ["#modAdviseme h2", "#modAdviseme p", "#modAdviseme .content-button a"]
+        },
+        {
+          "id": "section-3",
+          "name": "Formas de viajar",
+          "selector": ".mod_section_access",
+          "style": "grey",
+          "blocks": ["cards-travel"],
+          "defaultContent": [".mod_section_access header h2", ".mod_section_access header p"]
+        },
+        {
+          "id": "section-4",
+          "name": "Advantages",
+          "selector": ".hv-advantages",
+          "style": null,
+          "blocks": ["cards-travel"],
+          "defaultContent": [".hv-advantages header h2"]
+        },
+        {
+          "id": "section-5",
+          "name": "Image Carousel",
+          "selector": ".thumbnail-module",
+          "style": null,
+          "blocks": ["carousel-gallery"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Que ver en Egipto",
+          "selector": [".row > .column > .module.mod-info:has(> h2:first-child)"],
+          "style": null,
+          "blocks": ["accordion-travel"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Donde alojarse",
+          "selector": [".row > .column > .module.mod-info:has(> h2:first-child)"],
+          "style": "grey",
+          "blocks": ["accordion-travel"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Informacion util",
+          "selector": [".row > .column > .module.mod-info:has(> h2:first-child)"],
+          "style": null,
+          "blocks": ["accordion-travel"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Otros destinos destacados",
+          "selector": ".mod-links-destination-x2",
+          "style": null,
+          "blocks": ["cards-travel"],
+          "defaultContent": [".mod-links-destination-x2 h2"]
+        }
+      ]
+    }
+  ]
+}

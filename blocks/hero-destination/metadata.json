@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-destination",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-08T08:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.viajeselcorteingles.es/grandes-viajes/destinos/egipto",
+    "originPage": "Travel destination landing page (Egypt)",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "destination-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "travel destination pages",
+      "country/region landing pages",
+      "full-width image hero sections with text overlay"
+    ],
+    "notSuitableFor": [
+      "product pages without background images",
+      "minimal text-only hero sections",
+      "pages requiring multiple CTAs in hero"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/grandes-viajes/destinos/egipto"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-08T08:35:00.000Z"
+  }
+}

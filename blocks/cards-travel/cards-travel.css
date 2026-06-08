@@ -1,0 +1,151 @@
+.cards-travel > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (width >= 600px) {
+  .cards-travel > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-travel > ul.cards-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cards-travel > ul > li {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  transition: box-shadow 0.2s ease;
+}
+
+.cards-travel > ul > li:hover {
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
+}
+
+.cards-travel .cards-travel-card-image {
+  line-height: 0;
+}
+
+.cards-travel > ul > li img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.cards-travel .cards-travel-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 60%));
+}
+
+.cards-travel .cards-travel-card-body h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.cards-travel .cards-travel-card-body p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+}
+
+.cards-travel .cards-travel-card-body a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cards-travel .cards-travel-card-body a:hover {
+  text-decoration: underline;
+}
+
+/* No-image variant (advantages/benefits) */
+.cards-travel.no-image {
+  background-color: rgb(202 224 210);
+  padding: 60px 20px;
+  margin: 40px -24px 0;
+  border-radius: 0;
+}
+
+@media (width >= 900px) {
+  .cards-travel.no-image {
+    margin: 40px -32px 0;
+  }
+}
+
+.cards-travel.no-image > ul {
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (width >= 900px) {
+  .cards-travel.no-image > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cards-travel.no-image > ul > li {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: center;
+  padding: 16px;
+}
+
+.cards-travel.no-image > ul > li:hover {
+  box-shadow: none;
+}
+
+.cards-travel.no-image .cards-travel-card-body {
+  position: static;
+  background: none;
+  padding: 0;
+}
+
+.cards-travel.no-image .cards-travel-card-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(58 63 58);
+  margin-bottom: 8px;
+}
+
+.cards-travel.no-image .cards-travel-card-body p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(58 63 58);
+}
+
+.cards-travel.no-image > ul > li:first-child {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 0 0 16px;
+}
+
+.cards-travel.no-image > ul > li:first-child h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(58 63 58);
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0;
+}

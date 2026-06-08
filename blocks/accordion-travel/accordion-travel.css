@@ -1,0 +1,179 @@
+/* Block: accordion-travel */
+
+/* Extracted values from source: viajeselcorteingles.es .module.mod-info */
+
+.accordion-travel {
+  padding: 30px;
+  border: 1px solid rgb(226 226 226);
+  max-width: 1170px;
+  margin: 40px auto;
+  background-color: var(--background-color);
+}
+
+/* Each accordion item (details element) */
+.accordion-travel details {
+  border-top: 1px solid rgb(199 199 199);
+  border-bottom: 1px solid rgb(199 199 199);
+  margin-bottom: 10px;
+}
+
+.accordion-travel details + details {
+  margin-top: 0;
+}
+
+/* Summary / title */
+.accordion-travel details summary {
+  position: relative;
+  padding: 20px;
+  padding-right: 50px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  line-height: 22px;
+  color: rgb(58 63 58);
+}
+
+.accordion-travel details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-travel details summary::marker {
+  display: none;
+  content: '';
+}
+
+/* Vertical accent bar on the right (source design pattern) */
+.accordion-travel details summary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: rgb(226 226 226);
+  transition: background-color 0.2s;
+}
+
+.accordion-travel details[open] summary::after {
+  background-color: var(--link-color);
+}
+
+/* Chevron arrow indicator */
+.accordion-travel details summary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid rgb(58 63 58);
+  border-bottom: 2px solid rgb(58 63 58);
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.accordion-travel details[open] summary::before {
+  transform: translateY(-25%) rotate(-135deg);
+}
+
+/* Summary heading resets */
+.accordion-travel details summary h2 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font-family);
+  line-height: 22px;
+  color: rgb(58 63 58);
+  margin: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Hover/focus state */
+.accordion-travel details summary:hover,
+.accordion-travel details summary:focus-visible {
+  background-color: var(--light-color);
+}
+
+/* Body / content panel */
+.accordion-travel details .accordion-travel-item-body {
+  padding: 10px 20px 20px;
+  border-top: 1px solid rgb(226 226 226);
+}
+
+/* Body text */
+.accordion-travel p {
+  font-size: 12px;
+  font-family: var(--body-font-family);
+  line-height: 16px;
+  color: rgb(58 63 58);
+  margin: 0 0 12px;
+}
+
+/* Links inside accordion */
+.accordion-travel a:any-link {
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.accordion-travel a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Images inside accordion body */
+.accordion-travel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Lists inside content */
+.accordion-travel ul {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.accordion-travel ul li {
+  margin-bottom: 8px;
+}
+
+/* Section title (first details item - non-collapsable heading) */
+.accordion-travel details:first-child {
+  border: none;
+  margin-bottom: 16px;
+  pointer-events: none;
+}
+
+.accordion-travel details:first-child summary {
+  padding: 0;
+  cursor: default;
+}
+
+.accordion-travel details:first-child summary::before,
+.accordion-travel details:first-child summary::after {
+  display: none;
+}
+
+.accordion-travel details:first-child summary h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  color: rgb(58 63 58);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (width >= 900px) {
+  .accordion-travel {
+    padding: 30px;
+  }
+
+  .accordion-travel details summary h2 {
+    font-size: 16px;
+  }
+}
